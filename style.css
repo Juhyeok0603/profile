@@ -14,27 +14,40 @@ body{
 .container{
     height: 100%;
     width: 100%;
-    background-image: url("background_2_1.jpg");
-    background-size: cover;
-    background-color: #AB88A0;
 }
-.profile_me{
+.container::after{
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url("background_2_1.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    opacity: 0.9;
+}
+.about_me{
     margin: 0 auto;
-    padding: 30px 20px;
+    padding: 20px;
+    margin-bottom: 10px;
     border: 1px solid white;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 10px rgb(255 255 255 / 63%);
     width: 300px;
+    height: 400px;
 }
-.profile_img{
+.about_img{
     width: 300px;
     height: 300px;
     margin: 0 auto;
     margin-bottom: 30px;
     background-color: pink;
 }
-.profile_img img{
+.about_img img{
     height: 100%;
     width: 100%;
 }
@@ -50,4 +63,69 @@ body{
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
+    
+}
+.about_select{
+    width: 300px;
+    margin: 0 auto;
+}
+.desc_box1{
+    margin-bottom: 20px;
+    color: aliceblue;
+    list-style: none;
+    display: flex;
+}
+.desc_box1 li{
+    text-align: center;
+}
+.desc_box1 li p:first-child {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.desc_box1 li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.desc_box1 li p:last-child {
+    font-size: 13px;
+    margin-top: 5px;
+}
+.desc_box2{
+    position: relative;
+    width: 120px;
+    height: 140px;
+    border: 1px solid white;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgb(255 255 255 / 63%);
+    animation:poter-ani 1.4s infinite linear alternate;
+}
+
+
+
+.property_box {
+    font-family: 'Katuri';
+    position: absolute;
+    text-align: center;
+}
+
+.property_box:nth-child(1){
+    top: 30%;
+    left: 15%;
+}
+
+.property_box:nth-child(2){
+    top: 30%;
+    right: 15%;
+}
+
+
+.property_box .poster {
+    position: relative;
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgb(255 255 255 / 63%);
 }
