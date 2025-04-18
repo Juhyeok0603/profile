@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Katuri';
+    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    margin: 0;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background-image: url("background_2_1.jpg");
+    background-size: cover;
+    background-color: #AB88A0;
+}
+.profile_me{
+    margin: 0 auto;
+    padding: 30px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgb(255 255 255 / 63%);
+    width: 300px;
+}
+.profile_img{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-color: pink;
+}
+.profile_img img{
+    height: 100%;
+    width: 100%;
+}
+.menu h2{
+    font-size: 3rem;
+    margin: 20px;
+    font-family: 'Katuri';
+    color: beige;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
