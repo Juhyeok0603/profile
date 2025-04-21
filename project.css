@@ -1,0 +1,115 @@
+/* 메뉴판 */
+@font-face {
+    font-family: 'Ownglyph_corncorn-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.logo{
+    font-family: 'Ownglyph_corncorn-Rg';
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    text-align: center;
+    font-size: 33px;
+}
+.navbar{
+    display: flex;
+    
+}
+.nav_con{
+    font-family: 'Ownglyph_corncorn-Rg';
+    width: 100%;
+    background-color: aliceblue;
+    font-size: 20px;
+}
+.nav_con ul{
+    position: absolute;
+    right: 0;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    list-style-type: none;
+}   
+.navbar a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.navbar a:hover{
+    color: rgb(100, 100, 100);
+}
+
+/*  */
+
+@font-face {
+    font-family: 'SinchonRhapsody';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2503@1.0/SinchonRhapsody.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ownglyph_ParkDaHyun';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    margin: 0;
+}
+.container{
+    background: url(back_1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.project{
+    position: absolute;
+    top: 20%;
+    height: 100%;
+    width: 100%;
+}
+.project_intro{
+    font-family: 'SinchonRhapsody';
+    color: azure;
+    text-align: center;
+    font-size: larger;
+}
+.project_con{
+    display: flex;
+    justify-content: space-between;
+}
+.project_tent{
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 10px white;
+    margin: auto;
+    height: 250px;
+    width: 200px;
+    background-color: beige;
+    text-align: center;
+    line-height: 250px;
+    font-size: 20px;
+    font-family: 'Ownglyph_ParkDaHyun';
+    
+}
+.con_1{
+    height: 100%;
+    width: 100%;
+}
+.project_tent:hover{
+    background-color: rgb(140, 142, 138);
+}
+.con_1 a{
+    color: black;
+    text-decoration: none;
+
+}
+.con_1 a:hover{
+    color: lch(95.95% 12.75 109.18);
+}
